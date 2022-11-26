@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,shrink-to-fit=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link type="text/css" rel="stylesheet" href="css/css.css" />
+  <link type="text/css" rel="stylesheet" href="swiper/swiper-3.4.2.min.css" />
+
+  <title>百丽</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="introduce">
+      <img src="images/introduce.png" />
+    </div>
+    <div class="service_bannar">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/service1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service2.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service3.png" />
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+    <div class="cooperation">
+      <img src="images/cooperation.png" />
+    </div>
+    <div class="case_banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/case1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/case2.png" />
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="about">
+      <img src="images/about.png" />
+    </div>
+  </div>
+  <script src="swiper/swiper-3.4.2.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: 2000,//自动播放间隔时间
+      autoplayDisableOnInteraction: false,
+      observer: true,//实时检测，动态更新
+
+    })        
+  </script>
+</body>
+
+</html>
